@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal-app</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="container" class="">
+      <nav class="px-24 py-16 sm:w-1/2 md:m-0 m-auto text-center md:text-left">
+        <a
+          href=""
+          id="logo"
+          class="italic text-yellow-400 bold text-xl md:w-full md:text-left text-center"
+          >MealApp</a
+        >
+      </nav>
+      <div class="flex items-center mb-10 flex-col md:flex-row">
+        <div class="w-2/3 md:w-1/2 flex justify-center md:block">
+          <div
+            class="w-4/5 border-white bg-yellow-400 overflow-hidden justify-center p-2 my-4 md:p-0 md:justify-end h-48 rounded-3xl md:rounded-r-full flex relative"
+          >
+            <img src="./images/image10.png" class="" alt="image" />
+          </div>
+        </div>
+        <div class="w-2/3 md:w-1/2 px-0 md:px-2">
+          <h2 class="text-blue-400 text-2xl text-center">
+            Découvrez de nouvelles recettes de cuisine.
+          </h2>
+          <p
+            class="text-lg text-black text-left md:text-justify py-2 bold pb-4"
+          >
+            Effectuez ici la recherche de meilleures recettes. Que des mets
+            épatants que vous pouvez réaliser chez vous.
+          </p>
+          <div>
+            <form id="formulaire" action="">
+              <span class="md:w-1/4 w-full text-center hidden md:contents"
+                >Search:&nbsp;</span
+              >
+              <input
+                type="text"
+                class="border-gray md:w-3/4 outline-0 border-2 px-6 w-full text-center py-4 bg-gray-200"
+                name="search"
+                id="search"
+                placeholder="entrer mots clés"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-gray-300 text-white grid p-8 grid-cols-1 justify-items-center md:justify-items-start md:grid-cols-3 gap-4"
+        id="meals"
+      ></div>
+    </div>
+    <div class="text-center">Made By CharbDev</div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
